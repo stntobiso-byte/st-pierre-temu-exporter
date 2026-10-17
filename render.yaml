@@ -3,5 +3,7 @@ services:
   - type: web
     name: st-pierre-temu-exporter
     runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
+    
